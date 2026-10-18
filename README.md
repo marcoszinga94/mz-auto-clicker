@@ -154,3 +154,5 @@ Details zum Aufbau und zu Sicherheitsentscheidungen stehen in [ARCHITECTURE.md](
 ## Lizenz
 
 Klickmeister ist freie Software unter der [MIT-Lizenz](LICENSE).
+
+Hecho por Marcos Zingaretti — [marcoszinga.vercel.app](https://marcoszinga.vercel.app)
