@@ -20,11 +20,12 @@ import struct
 import sys
 import threading
 import time
+import webbrowser
 
 import gi
 
 gi.require_version("Gtk", "4.0")
-from gi.repository import Gio, GLib, Gtk  # noqa: E402
+from gi.repository import Gio, GLib, Gtk, Gdk  # noqa: E402
 
 
 # --------------------------------------------------------------------------- #
@@ -444,6 +445,9 @@ class ClickerApp(Gtk.Application):
         self.count_label = Gtk.Label(label="Clics realizados: 0")
         self.count_label.set_xalign(0)
         box.append(self.count_label)
+
+        self.footer_link = Gtk.LinkButton.new_with_label("https://marcoszinga.vercel.app", "Hecho por Marcos Zingaretti")
+        box.append(self.footer_link)
 
         if not self.mouse:
             self.toggle_button.set_sensitive(False)
